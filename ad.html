@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>AD</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="result">
+            <h1>Title:</h1>
+            <p id="title"></p>
+            <h1>Description:</h1>
+            <p id="desc"></p>
+            <h1>Image:</h1>
+            <p id="image"></p>
+            <h1>Logo:</h1>
+            <p id="logo"></p>
+        </div>
+
+        <div class="adbuilder-device" id="adbuilder-device">
+            <div id="marvel-device" class="marvel-device mobile portrait light-gray inner-shadow outter-shadow">
+              <div class="screen">
+                
+                  <video autoplay="" muted="" loop="" src="https://s3.amazonaws.com/static.yieldmo.com/icons/adbuilder3_demo_videos/Hyperscroller.mp4"></video>
+                <dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+                <device-frame style="display: none;">
+                  </device-frame><dom-if style="display: none;"><template is="dom-if"></template></dom-if>
+              </div>
+            </div>
+          </div>
+    </body>
+    <script>
+        window.addEventListener('load', ()=>{
+            const title = localStorage.getItem('enteredTitle');
+            console.log(title)
+            const desc = localStorage.getItem('enteredDesc');
+            const image = localStorage.getItem('enteredImage');
+            const logo = localStorage.getItem('enteredLogo');
+
+            document.getElementById('title').innerHTML= title
+            document.getElementById('desc').innerHTML = desc
+            document.getElementById('image').innerHTML = image
+            document.getElementById('logo').innerHTML = logo
+        })
+    </script>
+    
+</html>

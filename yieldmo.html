@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Assessment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onmousemove="coordinatesLog(event)">
+        
+        <form id="form" action="ad.html" onsubmit="return submitHandler();">
+            <div class="form-label">
+                <input type="text" id="title" placeholder="Title">
+            </div>
+            
+            <div class="form-label">
+                <input type="text" id="desc" placeholder="Description">
+            </div>
+
+            <div class="form-label">
+                <input type="file" id="image" placeholder="Image">
+            </div>
+
+            <div class="form-label">
+                <input type="text" id="logo" placeholder="Logo">
+            </div>
+            <input type="submit"></input>
+        </form>
+        <div class="frame-class">
+            <iframe src="ad.html" style="margin: auto;" width="50%" height="70%"></iframe>
+        </div>
+    </body>
+    <script type="text/javascript" src="index.js"></script>
+</html>
